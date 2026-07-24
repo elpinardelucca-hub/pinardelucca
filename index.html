@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NRDDL4XB');</script>
+<!-- End Google Tag Manager -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="logo/favicon.svg">
+<link rel="icon" type="image/png" sizes="192x192" href="logo/favicon-192.png">
+<link rel="apple-touch-icon" href="logo/favicon-192.png">
+<title>El Pinar de Lucca | Barbacoa &amp; Asado Experience en Callosa d'En Sarrià, Alicante</title>
+<meta name="description" content="Experiencia privada de barbacoa argentino-española en una huerta de Callosa d'En Sarrià, Alicante, a 5 minutos de las Fuentes del Algar. Cocinás con nosotros, comés entrantes, asado y postre caseros, y te relajás en la piscina. Grupos de hasta 12 personas.">
+<meta property="og:title" content="El Pinar de Lucca | Barbacoa Experience en Alicante">
+<meta property="og:description" content="Barbacoa argentino-española privada en nuestra huerta, cerca de las Fuentes del Algar. Cocina en vivo, piscina y vistas a la montaña.">
+<meta property="og:image" content="asador-cruz-cargado.jpeg">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://pinardelucca.com">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --terracota:#b5563c;
+    --olivo:#5c6e49;
+    --crema:#f7f1e6;
+    --crema-osc:#ece2cc;
+    --texto:#2e2a24;
+    --dorado:#c99a4a;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background:var(--crema);
+    color:var(--texto);
+    line-height:1.6;
+  }
+  h1,h2,h3{font-family:'Georgia', serif; font-weight:700;}
+  a{color:inherit;}
+
+  /* Lang toggle logic */
+  [data-lang="en"]{display:none;}
+  body.lang-en [data-lang="es"]{display:none;}
+  body.lang-en [data-lang="en"]{display:block;}
+  body.lang-en span[data-lang="en"]{display:inline;}
+  body.lang-en li[data-lang="en"]{display:list-item;}
+
+  header{
+    position:sticky; top:0; z-index:50;
+    background:var(--crema);
+    border-bottom:1px solid var(--crema-osc);
+    display:flex; align-items:center; justify-content:space-between;
+    padding:16px 28px;
+  }
+  .logo{font-size:1.3rem; letter-spacing:1px; color:var(--terracota); font-weight:700;}
+  .logo small{display:block; font-size:0.65rem; letter-spacing:3px; color:var(--olivo); font-weight:400; text-transform:uppercase;}
+  .lang-switch button{
+    background:none; border:1px solid var(--olivo); color:var(--olivo);
+    padding:6px 12px; border-radius:20px; cursor:pointer; font-size:0.8rem;
+    margin-left:6px; font-family:inherit;
+  }
+  .lang-switch button.active{background:var(--olivo); color:#fff;}
+
+  .hero{
+    background:
+      linear-gradient(rgba(46,42,36,0.45), rgba(46,42,36,0.55)),
+      url('asador-cruz-cargado.jpeg') center/cover no-repeat;
+    color:#fff; text-align:center; padding:110px 20px 90px;
+  }
+  .hero h1{font-size:2.6rem; max-width:800px; margin:0 auto 16px;}
+  .hero p{font-size:1.15rem; max-width:600px; margin:0 auto 30px; opacity:0.95;}
+  .btn{
+    display:inline-block; background:var(--terracota); color:#fff;
+    padding:14px 32px; border-radius:30px; text-decoration:none;
+    font-size:1rem; letter-spacing:0.5px; transition:transform .15s;
+    border:none; cursor:pointer;
+  }
+  .btn:hover{transform:translateY(-2px);}
+  .btn-outline{background:transparent; border:2px solid #fff;}
+
+  section{padding:70px 20px;}
+  .wrap{max-width:920px; margin:0 auto;}
+  .center{text-align:center;}
+  .kicker{color:var(--dorado); text-transform:uppercase; letter-spacing:3px; font-size:0.8rem; margin-bottom:10px; display:block;}
+  h2{font-size:2rem; margin-bottom:22px; color:var(--terracota);}
+
+  .story{background:#fff;}
+  .story .wrap{display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:center;}
+  .story-img{
+    background:url('grupo-mesa.jpeg') center/cover no-repeat;
+    border-radius:12px; min-height:280px;
+  }
+  @media(max-width:760px){ .story .wrap{grid-template-columns:1fr;} }
+
+  .includes{background:var(--crema-osc);}
+  .grid3{display:grid; grid-template-columns:repeat(3,1fr); gap:24px; margin-top:30px;}
+  @media(max-width:760px){ .grid3{grid-template-columns:1fr;} }
+  .card{background:#fff; border-radius:12px; overflow:hidden; box-shadow:0 2px 10px rgba(0,0,0,0.06);}
+  .card-body{padding:22px 26px 26px;}
+  .card-img{height:170px; background-size:cover; background-position:center;}
+  .card h3{color:var(--olivo); margin-bottom:10px; font-size:1.1rem;}
+  .card ul{padding-left:18px; font-size:0.95rem;}
+  .card li{margin-bottom:6px;}
+
+  .gallery{background:var(--crema-osc);}
+  .gallery-grid{
+    display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-top:30px;
+  }
+  @media(max-width:760px){ .gallery-grid{grid-template-columns:repeat(2,1fr);} }
+  .gallery-grid a{display:block; border-radius:10px; overflow:hidden; aspect-ratio:1/1;}
+  .gallery-grid img{width:100%; height:100%; object-fit:cover; display:block; transition:transform .2s;}
+  .gallery-grid a:hover img{transform:scale(1.06);}
+
+  .packages{background:#fff;}
+  .price-intro{max-width:640px; margin:0 auto 30px; text-align:center; font-size:0.95rem; color:#5a5347;}
+  .pkg{
+    border-left:4px solid var(--olivo); background:var(--crema);
+    border-radius:8px; padding:20px 26px; margin-bottom:16px;
+  }
+  .pkg h3{color:var(--terracota); margin-bottom:6px;}
+  .pkg .desc{font-size:0.95rem;}
+  .pkg .tag{font-weight:bold; color:var(--olivo);}
+  .copas-note{
+    max-width:640px; margin:26px auto 0; text-align:center; font-size:0.9rem;
+    color:#5a5347; font-style:italic;
+  }
+  .price-note{margin-top:24px; font-size:0.9rem; color:#5a5347; text-align:center;}
+
+  .practical{background:var(--crema-osc);}
+  .grid2{display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-top:20px;}
+  @media(max-width:760px){ .grid2{grid-template-columns:1fr;} }
+  .info-item{background:#fff; border-radius:12px; padding:22px;}
+  .info-item h3{color:var(--olivo); font-size:1rem; margin-bottom:8px;}
+
+  .reserve{background:#fff;}
+  .cal-embed{
+    max-width:700px; margin:30px auto 0; min-height:650px;
+    border:1px solid var(--crema-osc); border-radius:12px; overflow:hidden;
+  }
+  .form-actions{text-align:center; margin-top:10px;}
+  .whatsapp-btn{
+    display:inline-block; background:#25D366; color:#fff; padding:12px 26px;
+    border-radius:30px; text-decoration:none; font-size:0.95rem; margin-top:14px;
+  }
+  .or-divider{text-align:center; color:#8a8375; font-size:0.85rem; margin:18px 0;}
+
+  footer{background:var(--texto); color:var(--crema); text-align:center; padding:40px 20px; font-size:0.85rem;}
+  footer .logo{color:var(--crema); margin-bottom:10px;}
+
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NRDDL4XB"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header>
+  <div class="logo">El Pinar de Lucca
+    <small><span data-lang="es">Barbacoa &amp; Asado Experience</span><span data-lang="en">Barbecue &amp; Asado Experience</span></small>
+  </div>
+  <div class="lang-switch">
+    <button id="btn-es" class="active" onclick="setLang('es')">ES</button>
+    <button id="btn-en" onclick="setLang('en')">EN</button>
+  </div>
+</header>
+
+<section class="hero">
+  <h1 data-lang="es">Un día de asado, huerta y piscina en la Costa Blanca</h1>
+  <h1 data-lang="en">A day of asado, orchard and pool in the Costa Blanca</h1>
+  <p data-lang="es">Experiencia privada de barbacoa argentino-española en nuestra casa, a 5 minutos de las Fuentes del Algar. Cociná con nosotros, disfrutá la piscina y volvé a casa con la panza llena.</p>
+  <p data-lang="en">A private Argentine-Spanish barbecue experience at our home, 5 minutes from the Fuentes del Algar. Cook alongside us, relax by the pool, and head home well fed.</p>
+  <a href="#reserva" class="btn">
+    <span data-lang="es">Reservar mi experiencia</span>
+    <span data-lang="en">Book my experience</span>
+  </a>
+</section>
+
+<section class="story">
+  <div class="wrap">
+    <div>
+      <span class="kicker" data-lang="es">Nuestra historia</span>
+      <span class="kicker" data-lang="en">Our story</span>
+      <h2 data-lang="es">No es un restaurante. Es nuestra casa.</h2>
+      <h2 data-lang="en">This isn't a restaurant. It's our home.</h2>
+      <p data-lang="es">Vivimos en la huerta de Callosa d'En Sarrià, Alicante, rodeados de aguacates y con unas vistas espectaculares. Desde antes de reformar la casa siempre hicimos barbacoas grandes para amigos y familia — ahora abrimos esa misma mesa a un grupo reducido de viajeros que quieran vivir un asado de verdad, con la calidez argentina y española, lejos del circuito turístico.</p>
+      <p data-lang="en">We live on a small farm (huerta) in Callosa d'En Sarrià, Alicante, surrounded by avocado trees with spectacular views. Long before we renovated the house, we always hosted big barbecues for friends and family — now we're opening that same table to a small group of travelers who want a real asado experience, with Argentine and Spanish warmth, away from the usual tourist trail.</p>
+    </div>
+    <div class="story-img"></div>
+  </div>
+</section>
+
+<section class="includes">
+  <div class="wrap">
+    <span class="kicker center" data-lang="es" style="display:block;">La experiencia</span>
+    <span class="kicker center" data-lang="en" style="display:block;">The experience</span>
+    <h2 class="center" data-lang="es">Qué incluye</h2>
+    <h2 class="center" data-lang="en">What's included</h2>
+    <div class="grid3">
+      <div class="card">
+        <div class="card-img" style="background-image:url('asado-berenjenas.jpeg');"></div>
+        <div class="card-body">
+        <h3 data-lang="es">Cocina en vivo</h3>
+        <h3 data-lang="en">Live cooking</h3>
+        <ul>
+          <li data-lang="es">Cociná junto a nosotros en la parrilla</li>
+          <li data-lang="en">Cook with us on the grill</li>
+          <li data-lang="es">También tenemos paellero a fuego real</li>
+          <li data-lang="en">We also have a wood-fired paellero</li>
+          <li data-lang="es">Entrantes, asado/barbacoa y postre, todo casero</li>
+          <li data-lang="en">Starters, barbecue and dessert, all homemade</li>
+        </ul>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img" style="background-image:url('tumbonas.jpeg'); background-position:center 68%; height:260px;"></div>
+        <div class="card-body">
+        <h3 data-lang="es">Piscina y descanso</h3>
+        <h3 data-lang="en">Pool &amp; lounging</h3>
+        <ul>
+          <li data-lang="es">Piscina desmontable de 5 metros</li>
+          <li data-lang="en">5-metre above-ground pool</li>
+          <li data-lang="es">Tumbonas y sombrillas</li>
+          <li data-lang="en">Sun loungers and umbrellas</li>
+          <li data-lang="es">Pérgola con sombra para comer o descansar</li>
+          <li data-lang="en">Shaded pergola for eating or resting</li>
+        </ul>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img" style="background-image:url('parrilla-huerta.jpeg');"></div>
+        <div class="card-body">
+        <h3 data-lang="es">La huerta</h3>
+        <h3 data-lang="en">The orchard</h3>
+        <ul>
+          <li data-lang="es">Paseo por nuestra huerta</li>
+          <li data-lang="en">Walk through our orchard</li>
+          <li data-lang="es">Cosecha de aguacates en temporada</li>
+          <li data-lang="en">Avocado picking, in season</li>
+          <li data-lang="es">Atención exclusiva para tu grupo</li>
+          <li data-lang="en">Exclusive attention for your group</li>
+        </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="packages">
+  <div class="wrap">
+    <span class="kicker center" data-lang="es" style="display:block;">Bebida</span>
+    <span class="kicker center" data-lang="en" style="display:block;">Drinks</span>
+    <h2 class="center" data-lang="es">Elegí tu paquete de bebida</h2>
+    <h2 class="center" data-lang="en">Choose your drinks package</h2>
+    <p class="price-intro" data-lang="es">El precio de la experiencia incluye todo: entrantes, asado, postre y bebida durante las 4-5 horas. Lo único que cambia según el paquete es el nivel del vino.</p>
+    <p class="price-intro" data-lang="en">The experience price includes everything: starters, barbecue, dessert and drinks throughout the 4-5 hours. The only thing that changes between packages is the wine tier.</p>
+
+    <div class="pkg">
+      <h3 data-lang="es">Pack Casa</h3>
+      <h3 data-lang="en">House Pack</h3>
+      <p class="desc" data-lang="es">Vino de la casa, agua, refrescos y cerveza incluidos. <span class="tag">Incluido en el precio de la experiencia.</span></p>
+      <p class="desc" data-lang="en">House wine, water, soft drinks and beer included. <span class="tag">Included in the experience price.</span></p>
+    </div>
+
+    <div class="pkg">
+      <h3 data-lang="es">Pack Premium</h3>
+      <h3 data-lang="en">Premium Pack</h3>
+      <p class="desc" data-lang="es">Selección de vinos argentinos y españoles de mayor gama, agua, refrescos y cerveza incluidos. <span class="tag">Suma un plus por persona.</span></p>
+      <p class="desc" data-lang="en">A selection of higher-end Argentine and Spanish wines, water, soft drinks and beer included. <span class="tag">Adds a per-person supplement.</span></p>
+    </div>
+
+    <div class="pkg">
+      <h3 data-lang="es">Pack a Medida</h3>
+      <h3 data-lang="en">Custom Pack</h3>
+      <p class="desc" data-lang="es">Elegís marca y tipo de bebida con antelación. Ideal para grupos con gustos particulares. <span class="tag">Precio a confirmar.</span></p>
+      <p class="desc" data-lang="en">Choose your preferred brand and drink type in advance. Ideal for groups with specific tastes. <span class="tag">Price to be confirmed.</span></p>
+    </div>
+
+    <p class="copas-note" data-lang="es">¿Querés algo con más punch? También podemos armar copas, como un gin tonic o el clásico fernet con Coca-Cola argentino, para cualquier paquete. Contanos al reservar.</p>
+    <p class="copas-note" data-lang="en">Fancy something stronger? We can also prepare cocktails, like a gin &amp; tonic or the classic Argentine fernet with Coca-Cola, for any package. Just let us know when you book.</p>
+
+    <p class="price-note" data-lang="es">Precio orientativo: desde 100&euro; por persona, comida y bebida incluidas (Pack Casa). El precio final según paquete y copas se confirma en la reserva.</p>
+    <p class="price-note" data-lang="en">Starting price: from &euro;100 per person, food and drinks included (House Pack). Final price by package and cocktails confirmed at booking.</p>
+
+    <p class="copas-note" data-lang="es">&iquest;Quer&eacute;s ver el men&uacute; completo? Escribinos por WhatsApp y te lo enviamos.</p>
+    <p class="copas-note" data-lang="en">Want to see the full menu? Message us on WhatsApp and we'll send it over.</p>
+  </div>
+</section>
+
+<section class="practical">
+  <div class="wrap">
+    <span class="kicker center" data-lang="es" style="display:block;">Información práctica</span>
+    <span class="kicker center" data-lang="en" style="display:block;">Practical information</span>
+    <h2 class="center" data-lang="es">Antes de reservar</h2>
+    <h2 class="center" data-lang="en">Before you book</h2>
+    <div class="grid2">
+      <div class="info-item">
+        <h3 data-lang="es">Duración y grupo</h3>
+        <h3 data-lang="en">Duration &amp; group size</h3>
+        <p data-lang="es">4 a 5 horas. Grupos de hasta 10-12 personas.</p>
+        <p data-lang="en">4 to 5 hours. Groups of up to 10-12 people.</p>
+      </div>
+      <div class="info-item">
+        <h3 data-lang="es">Ubicación</h3>
+        <h3 data-lang="en">Location</h3>
+        <p data-lang="es">Callosa d'En Sarrià, Alicante, a 5 minutos en coche de las Fuentes del Algar.</p>
+        <p data-lang="en">Callosa d'En Sarrià, Alicante, a 5-minute drive from the Fuentes del Algar.</p>
+      </div>
+      <div class="info-item">
+        <h3 data-lang="es">Cómo llegar</h3>
+        <h3 data-lang="en">Getting there</h3>
+        <p data-lang="es">Tenemos parking propio. Si no tenés coche, coordinamos un taxi de confianza que te trae y te recoge a la hora que necesites.</p>
+        <p data-lang="en">We have private parking. If you don't have a car, we can arrange a trusted taxi to bring you and pick you up whenever you need.</p>
+      </div>
+      <div class="info-item">
+        <h3 data-lang="es">Pago</h3>
+        <h3 data-lang="en">Payment</h3>
+        <p data-lang="es">Se abona en efectivo el día de la experiencia.</p>
+        <p data-lang="en">Payment is made in cash on the day of the experience.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="gallery">
+  <div class="wrap">
+    <span class="kicker center" data-lang="es" style="display:block;">Fotos reales</span>
+    <span class="kicker center" data-lang="en" style="display:block;">Real photos</span>
+    <h2 class="center" data-lang="es">Así se vive un día acá</h2>
+    <h2 class="center" data-lang="en">This is what a day here looks like</h2>
+    <div class="gallery-grid">
+      <a href="carnes-parrilla.jpeg" target="_blank"><img src="carnes-parrilla.jpeg" alt="Chorizos y entraña a la parrilla" loading="lazy"></a>
+      <a href="asador-cruz-vista.jpeg" target="_blank"><img src="asador-cruz-vista.jpeg" alt="Asador en cruz con vista a las montañas" loading="lazy"></a>
+      <a href="grupo-selfie.jpeg" target="_blank"><img src="grupo-selfie.jpeg" alt="Grupo disfrutando la mesa" loading="lazy"></a>
+      <a href="pergola.jpeg" target="_blank"><img src="pergola.jpeg" alt="Pérgola con mesa y sillas" loading="lazy"></a>
+      <a href="piscina-sol.jpeg" target="_blank"><img src="piscina-sol.jpeg" alt="Piscina con sol" loading="lazy"></a>
+      <a href="piscina-nublada-ancha.jpeg" target="_blank"><img src="piscina-nublada-ancha.jpeg" alt="Piscina de 5 metros" loading="lazy"></a>
+      <a href="piscina-nublada-cerca.jpeg" target="_blank"><img src="piscina-nublada-cerca.jpeg" alt="Detalle de la piscina" loading="lazy"></a>
+      <a href="atardecer.jpeg" target="_blank"><img src="atardecer.jpeg" alt="Atardecer sobre la huerta y las montañas" loading="lazy"></a>
+    </div>
+  </div>
+</section>
+
+<section class="reserve" id="reserva">
+  <div class="wrap">
+    <span class="kicker center" data-lang="es" style="display:block;">Reserva</span>
+    <span class="kicker center" data-lang="en" style="display:block;">Booking</span>
+    <h2 class="center" data-lang="es">Contanos sobre tu grupo</h2>
+    <h2 class="center" data-lang="en">Tell us about your group</h2>
+    <p class="center" data-lang="es">Elegí el día y horario disponible en el calendario y completá tus datos. Te llega automáticamente por email.</p>
+    <p class="center" data-lang="en">Pick an available day and time on the calendar and fill in your details. It reaches us automatically by email.</p>
+
+    <!-- Calendario conectado a cal.com/barbacue-elpinardelucca/barbacoa-experience -->
+    <div id="my-cal-inline" class="cal-embed"></div>
+    <script type="text/javascript">
+      (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+      Cal("init", "barbacoa-experience", {origin:"https://cal.com"});
+      Cal.ns["barbacoa-experience"]("inline", {
+        elementOrSelector:"#my-cal-inline",
+        calLink: "barbacue-elpinardelucca/barbacoa-experience",
+        layout: "month_view"
+      });
+      Cal.ns["barbacoa-experience"]("ui", {"hideEventTypeDetails":false, "layout":"month_view"});
+    </script>
+
+    <p class="center" data-lang="es" style="font-size:0.9rem; color:#5a5347; margin-top:16px;">¿Buscás una fecha en especial que no aparece disponible? Escribinos igual y lo consultamos.</p>
+    <p class="center" data-lang="en" style="font-size:0.9rem; color:#5a5347; margin-top:16px;">Looking for a specific date that doesn't show as available? Message us anyway and we'll check.</p>
+
+    <div class="or-divider" data-lang="es">— o si preferís, escribinos directo —</div>
+    <div class="or-divider" data-lang="en">— or if you prefer, message us directly —</div>
+    <div class="center">
+      <a class="whatsapp-btn" target="_blank" href="https://wa.me/34681803745?text=Hola!%20Quiero%20reservar%20la%20Barbacoa%20Experience%20en%20El%20Pinar%20de%20Lucca">
+        <span data-lang="es">Escribir por WhatsApp</span>
+        <span data-lang="en">Message on WhatsApp</span>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="logo">El Pinar de Lucca</div>
+  <p data-lang="es">Callosa d'En Sarrià, Alicante &middot; Comunidad Valenciana &middot; Experiencia privada, sin cobro online</p>
+  <p data-lang="en">Callosa d'En Sarrià, Alicante &middot; Valencian Community &middot; Private experience, no online payment</p>
+  <p style="margin-top:10px;">
+    elpinardelucca@gmail.com &middot; WhatsApp: +34 681 803 745
+  </p>
+</footer>
+
+<script>
+function setLang(lang){
+  document.body.classList.toggle('lang-en', lang === 'en');
+  document.getElementById('btn-es').classList.toggle('active', lang === 'es');
+  document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+}
+</script>
+
+</body>
+</html>
